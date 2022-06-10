@@ -11,16 +11,24 @@ public:
 
 int main ()
 {
-	Vehicle minivan ;
-	int     range   ;
+	Vehicle minivan  ;
+	Vehicle sportcar ;
+	int     range1   ;
+	int     range2   ;
 	
-	minivan.passengers = 7  ;
-	minivan.fuelcap    = 16 ;
-	minivan.mpg        = 21 ;
+	minivan.passengers  = 7  ;
+	minivan.fuelcap     = 16 ;
+	minivan.mpg         = 21 ;
 
-	range = minivan.fuelcap * minivan.mpg ;
+	sportcar.passengers = 2  ;
+        sportcar.fuelcap    = 14 ;
+        sportcar.mpg        = 12 ;
 
-	cout << " Фургон может проехать расстояние: " << range << endl;
+	range1 = minivan.fuelcap  * minivan.mpg  ;
+        range2 = sportcar.fuelcap * sportcar.mpg ;
+
+        cout << " Фургон может проехать расстояние: "            << range1 << endl;
+	cout << " Спортивная машина может проехать расстояние: " << range2 << endl;
 
 return 0;
 }
