@@ -6,19 +6,9 @@ class Cl
 {
 	int i = 3 ;
 public:
-	int  get_i()      ;
-	void put_i(int j) ;
+	int  get_i() { return i ; }   ;
+	void put_i(int j) { i = j ; } ;
 }; // class Cl
-
-inline int Cl::get_i()
-{
-	return i ;
-} // inline int Cl::get_i()
-
-inline void Cl::put_i(int j)
-{
-	i = j ;
-} // inline void Cl::put_i(int j)
 
 int main()
 {
